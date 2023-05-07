@@ -1,2 +1,2 @@
 # MOGOCO-CSS-library
-CSS前端库
+这是一个纯HTML+CSS响应式前端库
