@@ -9,176 +9,193 @@
     <link rel="stylesheet" href="/mogoco-css-library/Assets/style.css">
 </head>
 
-<body>
-    <header>
-        <a class="brand" href="#"><img src="/logo.svg" height="32" alt="">MOGOCO CSS Library</a>
+<body class="bgc-gradient">
+    <div class="container ">
+        <header class="shadow mica">
+            <nav>
+                <a class="brand" href="#">
+                    <h4> MOGOCO </h4> <span>UI</span>
+                </a>
+            </nav>
+        </header>
+        <!-- 侧边栏内容   -->
+        <div class="content ">
+            <aside>
+                <details open>
+                    <summary>
+                        <h4>MOGOCO CSS library </h4>
+                    </summary>
+                    <details open>
+                        <summary>
+                            <h6>页面基础元素</h6>
+                        </summary>
+                        <ul>
+                            <li> 颜色体系 / Color System </li>
+                            <li> 字体排版 / Typography </li>
+                            <li> 标题 / Headings </li>
+                            <li> 段落 / Paragraph </li>
+                        </ul>
+                    </details>
+                    <details open>
+                        <summary>
+                            <h6> 页面组件</h6>
+                        </summary>
 
-    </header>
-    <!-- 侧边栏内容   -->
-    <div class="container">
-        <aside>
-            <h6>+ 页面基础元素</h6>
-            <ul>
-                <li> - 颜色体系 / Color System </li>
-                <li> - 字体排版 / Typography </li>
-                <li> - 标题 / Headings </li>
-                <li> - 段落 / Paragraph </li>
-            </ul>
-            <h6> + 页面组件</h6>
-            <ul>
-                <li> - 面包屑导航 / Breadcrumb  </li>
-                <li> - 卡片 / Card -  </li>
-                <li> - 图片轮播 / Carousel </li>
-                <li> - 下拉菜单 / Dropdown</li>
-                <li> - 动态框 / Modal</li>
-                <li> - 导航条 / Navbar</li>
+                        <ul>
+                            <li> 面包屑导航 / Breadcrumb </li>
+                            <li> 卡片 / Card</li>
+                            <li>图片轮播 / Carousel </li>
+                            <li>下拉菜单 / Dropdown</li>
+                            <li>动态框 / Modal</li>
+                            <li>导航条 / Navbar</li>
 
-            </ul>
-        </aside>
-        <!--  文档的主体部分    -->
-        <main>
-            <article class="page01">
-                <h4>页面基础元素 / HTML Basic Elements </h4>
-                <h5>颜色体系 / Color System </h5>
-                <h6> 基础色 / Basic color </h6>
-                <div class="row">
-                    <!-- card-1 -->
-                    <div class="card">
-                        <svg class="card-img">
-                            <g>
-                                <rect width="90%" height="90%" fill="#ff7f00" x="5%" y="5%" />
-                            </g>
-                        </svg>
-                        <div class="card-body">
-                            <h7 class="card-title">MOGOCO mango </h7>
-                            <p class="card-text">
-                                Screen<br>
-                                HEX: #FFCA28<br>
-                                Print <br>
-                                C4 M27 Y84 K0</p>
+                        </ul>
+                    </details>
+                </details>
+            </aside>
+            <!--  文档的主体部分    -->
+            <main>
+                <article class="mica shadow rounded-r" id="page1">
+                    <h3>页面基础元素 / HTML Basic Elements </h3>
+                    <h4>颜色体系 / Color System </h4>
+                    <h5> 基础色 / Basic color </h5>
+                    <div class="row">
+                        <!-- card-1 -->
+                        <div class="card">
+                            <svg class="card-img">
+                                <g>
+                                    <rect width="100%" height="100%" fill="#ff7f00" />
+                                </g>
+                            </svg>
+                            <div class="card-body">
+                                <h6 class="card-title">MOGOCO mango </h6>
+                                <p class="card-text">
+                                    Screen<br>
+                                    HEX: #FFCA28<br>
+                                    Print <br>
+                                    C4 M27 Y84 K0</p>
+                            </div>
+                        </div>
+                        <!-- card-2 -->
+                        <div class="card">
+                            <svg class="card-img">
+                                <g>
+                                    <rect width="100%" height="100%" fill="#cecece" />
+                                </g>
+                            </svg>
+                            <div class="card-body">
+                                <h6 class="card-title">MOGOCO Light </h6>
+                                <p class="card-text">
+                                    Screen<br>
+                                    HEX: #FFCA28<br>
+                                    Print <br>
+                                    C4 M27 Y84 K0</p>
+                            </div>
+                        </div>
+                        <!-- card-3 -->
+                        <div class="card">
+                            <svg class="card-img">
+                                <g>
+                                    <rect width="100%" height="100%" fill="#868e96" />
+                                </g>
+                            </svg>
+                            <div class="card-body">
+                                <h6 class="card-title">MOGOCO Gray </h6>
+                                <p class="card-text">
+                                    >Screen<br>
+                                    HEX: #FFCA28<br>
+                                    Print <br>
+                                    C4 M27 Y84 K0</p>
+                            </div>
+                        </div>
+                        <!-- card-4 -->
+                        <div class="card">
+                            <svg class="card-img">
+                                <g>
+                                    <rect width="100%" height="100%" fill="#2e3b43" />
+                                </g>
+                            </svg>
+                            <div class="card-body">
+                                <h6 class="card-title">MOGOCO Dark </h6>
+                                <p class="card-text">
+                                    Screen<br>
+                                    HEX: #FFCA28<br>
+                                    Print <br>
+                                    C4 M27 Y84 K0</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- card-2 -->
-                    <div class="card">
-                        <svg class="card-img">
-                            <g>
-                                <rect width="90%" height="90%" fill="#cecece" x="5%" y="5%" />
-                            </g>
-                        </svg>
-                        <div class="card-body">
-                            <h7 class="card-title">MOGOCO Light </h7>
-                            <p class="card-text">
-                                Screen<br>
-                                HEX: #FFCA28<br>
-                                Print <br>
-                                C4 M27 Y84 K0</p>
+                    <h5> 辅色 / Assistant Color </h5>
+                    <div class="row">
+                        <!-- card-1 -->
+                        <div class="card">
+                            <svg class="card-img">
+                                <g>
+                                    <rect width="100%" height="100%" fill="#77216f" />
+                                </g>
+                            </svg>
+                            <div class="card-body">
+                                <h6 class="card-title">MOGOCO mango </h6>
+                                <p class="card-text">
+                                    Screen<br>
+                                    HEX: #FFCA28<br>
+                                    Print <br>
+                                    C4 M27 Y84 K0</p>
+                            </div>
+                        </div>
+                        <!-- card-2 -->
+                        <div class="card">
+                            <svg class="card-img">
+                                <g>
+                                    <rect width="100%" height="100%" fill="#198754" />
+                                </g>
+                            </svg>
+                            <div class="card-body">
+                                <h6 class="card-title">MOGOCO Light </h6>
+                                <p class="card-text">
+                                    Screen<br>
+                                    HEX: #FFCA28<br>
+                                    Print <br>
+                                    C4 M27 Y84 K0</p>
+                            </div>
+                        </div>
+                        <!-- card-3 -->
+                        <div class="card">
+                            <svg class="card-img">
+                                <g>
+                                    <rect width="100%" height="100%" fill="#dc3545" />
+                                </g>
+                            </svg>
+                            <div class="card-body">
+                                <h6 class="card-title">MOGOCO Gray </h6>
+                                <p class="card-text">
+                                    >Screen<br>
+                                    HEX: #FFCA28<br>
+                                    Print <br>
+                                    C4 M27 Y84 K0</p>
+                            </div>
+                        </div>
+                        <!-- card-4 -->
+                        <div class="card">
+                            <svg class="card-img">
+                                <g>
+                                    <rect width="100%" height="100%" fill="#ffc107" />
+                                </g>
+                            </svg>
+                            <div class="card-body">
+                                <h6 class="card-title">MOGOCO Dark </h6>
+                                <p class="card-text">
+                                    Screen<br>
+                                    HEX: #FFCA28<br>
+                                    Print <br>
+                                    C4 M27 Y84 K0</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- card-3 -->
-                    <div class="card">
-                        <svg class="card-img">
-                            <g>
-                                <rect width="90%" height="90%" fill="#868e96" x="5%" y="5%" />
-                            </g>
-                        </svg>
-                        <div class="card-body">
-                            <h7 class="card-title">MOGOCO Gray </h7>
-                            <p class="card-text">
-                                >Screen<br>
-                                HEX: #FFCA28<br>
-                                Print <br>
-                                C4 M27 Y84 K0</p>
-                        </div>
-                    </div>
-                    <!-- card-4 -->
-                    <div class="card">
-                        <svg class="card-img">
-                            <g>
-                                <rect width="90%" height="90%" fill="#2e3b43" x="5%" y="5%" />
-                            </g>
-                        </svg>
-                        <div class="card-body">
-                            <h7 class="card-title">MOGOCO Dark </h7>
-                            <p class="card-text">
-                                Screen<br>
-                                HEX: #FFCA28<br>
-                                Print <br>
-                                C4 M27 Y84 K0</p>
-                        </div>
-                    </div>
-                </div>
-                <h6> 辅色 / Assistant Color </h6>
-                <div class="row">
-                    <!-- card-1 -->
-                    <div class="card">
-                        <svg class="card-img">
-                            <g>
-                                <rect width="90%" height="90%" fill="#77216f" x="5%" y="5%" />
-                            </g>
-                        </svg>
-                        <div class="card-body">
-                            <h7 class="card-title">MOGOCO mango </h7>
-                            <p class="card-text">
-                                Screen<br>
-                                HEX: #FFCA28<br>
-                                Print <br>
-                                C4 M27 Y84 K0</p>
-                        </div>
-                    </div>
-                    <!-- card-2 -->
-                    <div class="card">
-                        <svg class="card-img">
-                            <g>
-                                <rect width="90%" height="90%" fill="#198754" x="5%" y="5%" />
-                            </g>
-                        </svg>
-                        <div class="card-body">
-                            <h7 class="card-title">MOGOCO Light </h7>
-                            <p class="card-text">
-                                Screen<br>
-                                HEX: #FFCA28<br>
-                                Print <br>
-                                C4 M27 Y84 K0</p>
-                        </div>
-                    </div>
-                    <!-- card-3 -->
-                    <div class="card">
-                        <svg class="card-img">
-                            <g>
-                                <rect width="90%" height="90%" fill="#dc3545" x="5%" y="5%" />
-                            </g>
-                        </svg>
-                        <div class="card-body">
-                            <h7 class="card-title">MOGOCO Gray </h7>
-                            <p class="card-text">
-                                >Screen<br>
-                                HEX: #FFCA28<br>
-                                Print <br>
-                                C4 M27 Y84 K0</p>
-                        </div>
-                    </div>
-                    <!-- card-4 -->
-                    <div class="card">
-                        <svg class="card-img">
-                            <g>
-                                <rect width="90%" height="90%" fill="#ffc107" x="5%" y="5%" />
-                            </g>
-                        </svg>
-                        <div class="card-body">
-                            <h7 class="card-title">MOGOCO Dark </h7>
-                            <p class="card-text">
-                                Screen<br>
-                                HEX: #FFCA28<br>
-                                Print <br>
-                                C4 M27 Y84 K0</p>
-                        </div>
-                    </div>
-                </div>
-
-                </aside>
-                <article class="page02">
-                    <h4>- + Typography - 字体排版</h4>
-                    <h5> -- Headings - 标题</h5>
+                </article>
+                <article class="mica shadow rounded-r">
+                    <h4>Typography - 字体排版</h4>
+                    <h5> Headings - 标题</h5>
                     <p>所有HTML标题, 从&lt;h1&gt; 到 &lt;h6&gt;, 都可用.</p>
                     <ul>
                         <li><code>Heading</code>
@@ -201,29 +218,30 @@
                             <h5>h5. MOGOCO CSS heading</h5>
                         </li>
                         <li><code>&lt;h6&gt;&lt;/h6&gt;</code>
-                            <h6>h6. MOGOCO CSS heading</h6>
+                            <h5>h6. MOGOCO CSS heading</h5>
                         </li>
                     </ul>
                     <h5>-- +段落 / Paragraph </h5>
                 </article>
-                <article class="page03"></article>
-                <article class="page04"></article>
-                <article class="page05">
+                <article class="mica shadow rounded-r"></article>
+                <article class="mica shadow rounded-r"></article>
+                <article class="mica shadow rounded-r">
                     <h4>-图片轮播 / Carousel </h4>
                     <div class="Carousel">
-                        <dul class="pic-box">
-                            <li><img src="/mig/pic01.jpg" alt=""></li>
-                            <li><img src="/mig/pic02.jpg" alt=""></li>
-                            <li><img src="/mig/pic03.jpg" alt=""></li>
-                            <li><img src="/mig/pic04.jpg" alt=""></li>
-                            <li><img src="/mig/pic01.jpg" alt=""></li>
-                            </ul>
+                        <ul class="pic-box">
+                            <li><img src="./Assets/img/pic01.jpg" alt=""></li>
+                            <li><img src="./Assets/img/pic02.jpg" alt=""></li>
+                            <li><img src="./Assets/img/pic03.jpg" alt=""></li>
+                            <li><img src="./Assets/img/pic04.jpg" alt=""></li>
+                            <li><img src="./Assets/img/pic01.jpg" alt=""></li>
+                        </ul>
                     </div>
                 </article>
-                <article class="page06">
+                <article class="mica shadow rounded-r">
                     <h4>-导航栏 / navbra </h4>
                 </article>
-        </main>
+            </main>
+        </div>
     </div>
 </body>
 
