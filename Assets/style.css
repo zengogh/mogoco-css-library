@@ -154,11 +154,25 @@ h7 {
 
 }
 /*目录树*/
+details{
+
+  /*垂直线*/
+  /* background: repeating-linear-gradient( #999 0 1px,transparent 0px 2px) 40px 0px/1px 100% no-repeat; */
+}
+details[open]>summary::before{
+  background: linear-gradient(#999, #999) 50%/10px 1px no-repeat;/*方十字*/
+}
+.tree>details{
+  padding-left: 1rem;
+}
+
 summary{
   display: flex;
   align-items: center;
-
+ /*水平线*/
+ background: linear-gradient(#999,#999) 0px 50%/25px 1px no-repeat;
 }
+
 summary::before{
   content: '';
   width: .875rem;
@@ -171,14 +185,26 @@ summary::before{
 details[open]>summary::before{
   background: linear-gradient(#999, #999) 50%/10px 1px no-repeat;
 }
-details ul li{
-  text-indent: 1.5rem;
+.tree ul{
+  margin-left: 0.5rem;
+  border-left: 1px dashed #999;
 }
 details ul li::before{
-  content: '-';
+  content: '--';
+  color: #999;
   width: .875rem;
   height:.875rem;
   flex-shrink: 0;
+}
+details summary:hover::after,details li:hover::after{
+  content: ' ';
+  position:absolute;
+  left: 0;
+  width: 16rem;
+  height: 1.5rem;
+  border-radius: .5rem;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -1;
 }
 /* -- Dropdown*/
 
@@ -294,11 +320,10 @@ nav,
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 }
 aside {
+position: fixed;
 min-width:16rem;
 display: flex;
 flex-direction: column;
@@ -306,7 +331,8 @@ flex-direction: column;
 }
 
 main {
-  flex: 1;
+  width: calc(100% - 16rem);
+  margin-left: 16rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
