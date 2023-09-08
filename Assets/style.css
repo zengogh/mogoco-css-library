@@ -370,7 +370,14 @@ article {
   grid-area: row;
   gap: 1rem;
 }
-
+.page-title{
+  border-top: 2px solid var(--dark);
+}
+.page-title>li{
+  border: 1px solid var(--Gray);
+  border-left: none;
+  border-right: none;
+}
 
 .page02 ul li {
   display: flex;
