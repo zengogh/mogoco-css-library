@@ -374,9 +374,8 @@ article {
   border-top: 2px solid var(--dark);
 }
 .page-title>li{
-  border: 1px solid var(--Gray);
-  border-left: none;
-  border-right: none;
+  border-bottom: 1px solid var(--Gray);
+  line-height: 1.5rem;
 }
 
 .page02 ul li {
