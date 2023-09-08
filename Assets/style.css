@@ -342,10 +342,10 @@ nav,
 }
 aside {
 position: fixed;
-min-width:16rem;
+min-width:18rem;
 display: flex;
 flex-direction: column;
-
+padding: 1rem 0 0 1rem;
 }
 
 main {
@@ -373,12 +373,15 @@ article {
 .page-title{
   border-top: 2px solid var(--dark);
 }
-.page-title>li{
-  border: 1px solid var(--Gray);
-  border-left: none;
-  border-right: none;
+.page-title li{
+  border-bottom: 1px solid var(--Gray);
+display: flex;
+align-items: center;
 }
+.page-title li code {
+  padding:0 2rem;
 
+}
 .page02 ul li {
   display: flex;
   align-items: center;
